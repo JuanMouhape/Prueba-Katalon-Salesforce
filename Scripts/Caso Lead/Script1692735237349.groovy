@@ -29,7 +29,8 @@ Mobile.tap(findTestObject('Object Repository/Prueba Lead/Button Agregar nueva co
 
 Mobile.setText(findTestObject('Object Repository/Prueba Lead/Input Nombre Conexion'), 'Prueba', 3)
 
-Mobile.setText(findTestObject('Object Repository/Prueba Lead/Input URL conexion'), 'https://app-site-6008.my.salesforce.com/', 3)
+Mobile.setText(findTestObject('Object Repository/Prueba Lead/Input URL conexion'), 'https://app-site-6008.my.salesforce.com/', 
+    3)
 
 Mobile.tap(findTestObject('Object Repository/Prueba Lead/Button Aplicar conexion'), 3)
 
@@ -69,7 +70,8 @@ Mobile.setText(findTestObject('Object Repository/Prueba Lead/Input Apellido'), '
 
 Mobile.setText(findTestObject('Object Repository/Prueba Lead/Input Cargo'), 'QA Automation', 3)
 
-Mobile.setText(findTestObject('Object Repository/Prueba Lead/Input correo electronico'), 'pruebaautomatizada@gmail.com', 3)
+Mobile.setText(findTestObject('Object Repository/Prueba Lead/Input correo electronico'), 'pruebaautomatizada@gmail.com', 
+    3)
 
 Mobile.setText(findTestObject('Object Repository/Prueba Lead/Input telefono'), '1112133221', 3)
 
@@ -91,8 +93,7 @@ Mobile.waitForElementPresent(findTestObject('Prueba Lead/Lead dado de Alta'), 5)
 
 Mobile.verifyElementVisible(findTestObject('Prueba Lead/Lead dado de Alta'), 0)
 
-String nombreApellido = Mobile.getText(findTestObject('Object Repository/Prueba Lead/Lead dado de Alta'), 
-    0)
+String nombreApellido = Mobile.getText(findTestObject('Object Repository/Prueba Lead/Lead dado de Alta'), 0)
 
 String cargo = Mobile.getText(findTestObject('Object Repository/Prueba Lead/Lead Cargo dado de alta'), 0)
 
